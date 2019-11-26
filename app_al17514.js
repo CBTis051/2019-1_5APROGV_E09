@@ -2,7 +2,9 @@ var http = require('http');
 http.createServer(function (req, res){
     res.writeHead(200, {'Content-Type':'application/json; charset=utf-8'});
 
-    res.end('Hola Mundo Node JS Repo GIT - Issac Puga Vazquez/n');
+    var objeto = {
+        mensaje : 'Hola mundo Node JS Repo Git - Issac David puga Vazquez\n'
+    };
     var json = JSON.stringify(objeto);
 
     res.end(json);
